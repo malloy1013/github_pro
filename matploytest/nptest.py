@@ -28,7 +28,7 @@ for i in range(1, t.shape[0]):
     predict_var = (predict_var * odo_var) / (predict_var + odo_var) ** 2
     predicts.append(position_predict)
 
-plt.plot(t, predicts, label='kalman filtered position')
+# plt.plot(t, predicts, label='kalman filtered position')
 
 plt.legend()
 plt.show()
