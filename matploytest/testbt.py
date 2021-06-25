@@ -3,13 +3,13 @@ import numpy as np
 
 
 if __name__ == '__main__':
-    x = np.linspace(-1, 1, 100)
-    y1 = 2 * x + 1
-    y2 = x ** 2
+    import numpy as np
 
-    # plt.figure()
-    plt.plot(x, y1)
-    # plt.figure(figsize=(8,5))
-    plt.plot(x, y2)
+    # a = np.array([[1, 2, 3], [4, 5, 6]])
+    a = np.arange(24)
+    b=a.reshape(2,4,3)
 
-    plt.show()
+    print(a)
+    print(b)
+    print(a.ndim)
+    print(b.ndim)
